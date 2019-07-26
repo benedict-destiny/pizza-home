@@ -1,0 +1,26 @@
+.mine{
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height:637px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+    
+}
+@font-face{
+    src: url("BigelowRules-Regular.ttf");
+    font-family: red-lip
+
+}
+h1{
+    letter-spacing: 6px;
+    text-align: center;
+    font-family: red-lip;
+    font-weight: bold;
+    font-size: 9em;
+    color: white;
+    
+
+}

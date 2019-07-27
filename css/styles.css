@@ -34,6 +34,10 @@ h1{
     
 
 }
+#test h2{
+    color:white;
+    font-size:90px
+}
 /* @media screen and (max-width: 481px){
 
   
@@ -46,11 +50,14 @@ html{
     display: none;
 }
 h2{
-    font-family: red-lip;
+    font-family: serif;
     font-size: 60px;
     text-align: center;
     color: black;
 }
 .but{
     position: sticky;
+}
+.row{
+    padding: 12px;
 }

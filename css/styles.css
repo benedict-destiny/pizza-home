@@ -6,8 +6,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    float: left;
     
+    
+}
+#click{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+a{
+    background-color: yellow;
 }
 @font-face{
     src: url("BigelowRules-Regular.ttf");
@@ -23,4 +33,23 @@ h1{
     color: white;
     
 
+}
+/* @media screen and (max-width: 481px){
+
+  
+  } */
+html{
+    scroll-behavior: smooth;
+}
+.img{
+    size: 60px;
+}
+#p{
+    display: none;
+}
+h2{
+    font-family: red-lip;
+    font-size: 60px;
+    text-align: center;
+    color: black;
 }

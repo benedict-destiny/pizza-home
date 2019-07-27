@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $(".order").click(function(){
+        $("#note").fadeOut();
+        $("#para").slideToggle();
+        $(".order").hide();
+        $(".cancel").fadeIn();
+    })
+    $(".cancel").click(function(){
+        $("#note").fadeIn();
+        $("#para").slideToggle();
+        $(".order").slideToggle();
+        $(".cancel").fadeOut();
+    })
+})

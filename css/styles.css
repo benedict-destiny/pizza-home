@@ -76,3 +76,9 @@ div#select.row{
     width: 100%;
     height: auto;
 }
+#para{
+    display: none;
+}
+.cancel{
+    display: none;
+}

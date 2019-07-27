@@ -12,7 +12,7 @@
     <body>
         <div class="container-fluid mine">
             <div id="test">
-                <div class="animated fadeInUp">
+                <div class="animated lightSpeedIn">
                     <h1>FLAMBE PIZZA</h2>
                 </div>
                     <div id="click">
@@ -20,24 +20,45 @@
                     </div>
             </div>
         </div>  
-       <div class="row" id="section2" style="width: 60rem;">
-           <div class="col-md-4">
-                   <img class="card-img-top" src="css/images/pizza types/hawai.jpg">
-                   <div class="card-body">
-                    <h4 class="card-title">Hawaaian</h4>
-                    <p class="card-text">PRICE: ksh1000</p>
-                    <button type="button" class="btn btn-warning"> SELECT</button>
+          <div class="cont" id="section2">
+              <div class="jumbotron">
+              <h2>JISORT</h2>
+              </div>
+            <div class="row" id="select" style="width: rem;">
+                    <div class="col-md-3">
+                           <img class="card-img-top responsive" src="css/images/pizza types/hawai.jpg">
+                           <div class="card-body">
+                            <h4 class="card-title">Hawaaian</h4>
+                            <p class="text-muted">  Click select to chose size and toppings</p>
+                            <button type="button" class="btn btn-warning" onclick="order1()"> SELECT</button>
+                           </div>
+                       </div>
+                       <div class="col-md-3">
+                           <img style="height: 303px" class="card-img-top responsive" src="css/images/pizza types/peri. png">
+                           <div class="card-body">
+                               <h4 class="card-title">PERI PERI</h4>
+                               <p class="text-muted">  Click select to chose size and toppings</p>
+                               <button type="button" class="btn btn-warning" onclick="order2()">SELECT</button>
+                           </div>
+                       </div>
+                       <div class="col-md-3">
+                           <img style="height: 310px" class="card-img-top responsive" src="css/images/pizza types/beast.jpg">
+                           <div class="card-body">
+                               <h4 class="card-title">BOKO BOKO</h4>
+                               <p class="text-muted">  Click select to chose size and toppings</p>
+                               <button type="button" class="btn btn-warning" onclick="order3()">SELECT</button>
+                           </div>
+                       </div>
+                       <div class="col-md-3">
+                           <img style="height: 310px" class="card-img-top responsive" src="css/images/pizza types/garlic.jpg">
+                           <div class="card-body">
+                               <h4 class="card-title">GARLIC SPECIAL</h4>
+                               <p class="text-muted">  Click select to chose size and toppings</p>
+                               <button type="button" class="btn btn-warning" onclick="order4()">SELECT</button>
+                           </div>
+                       </div>
                    </div>
-               </div>
-               <div class="col-md-4">
-                   <img style="height: 283px" class="card-img-top" src="css/images/pizza types/peri. png">
-                   <div class="card-body">
-                       <h4 class="card-title">PERI PERI</h4>
-                       <p class="card-text">PRICE: 1000</p>
-                       <button type="button" class="btn btn-warning" onclick="order()">SELECT</button>
-                   </div>
-               </div>
-           </div>
+      </div>
         <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     </body>

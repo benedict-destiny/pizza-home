@@ -2,7 +2,7 @@
     background-image: url("images/background.png");
     background-size: cover;
     background-attachment: fixed;
-    height:637px;
+    height:768px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,4 +60,19 @@ h2{
 }
 .row{
     padding: 12px;
+}
+.jumbotron{
+    background-color: rgba(245, 173, 17, 0.89);
+    padding: 12px 12px;
+}
+.jumbotron h2{
+    font-family: red-lip;
+    font-size: 80px
+}
+div#select.row{
+    margin: 0 0 0 0;
+}
+.responsive{
+    width: 100%;
+    height: auto;
 }

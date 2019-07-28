@@ -9,12 +9,20 @@
     
     
 }
+.mine p{
+    letter-spacing: 6px;
+    text-align: center;
+    font-family: red-lip;
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+    
+}
 #click{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
- 
 }
 a{
     background-color: yellow;
@@ -78,7 +86,35 @@ div#select.row{
 }
 #para{
     display: none;
+    margin: 12px;
+    text-align: center;
 }
 .cancel{
+    display: none;
+}
+.size1{
+    display: none;
+}
+.checkout{
+    display: none;
+}
+.checkout h3{
+    font-family: red-lip;
+    text-align: center;
+    font-size: 60px;
+    color:black;
+}
+#click2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.out{
+    font-family: red-lip;
+    text-align: center;
+    font-size: 60px;
+    color:black;
     display: none;
 }

@@ -67,10 +67,6 @@ $(document).ready(function(){
         $(".cancel4").fadeIn(500);
         $(".size4").fadeIn(500);
     })
-    $(".click2").click(function(){
-        $("")
-    })
-    
 })
 
 
@@ -152,9 +148,6 @@ function selectQuantity(){
 function post(){
     alert("your order has been received thank you for flambeing")
     return true
-}
-function we(){
-    
 }
 l();
 mid();

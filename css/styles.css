@@ -89,11 +89,26 @@ div#select.row{
     margin: 12px;
     text-align: center;
 }
+#para2{
+    display: none;
+}
 .cancel{
+    display: none;
+}
+.cancel2{
+    display:none;
+}
+.cancel3{
+    display: none;
+}
+.cancel4{
     display: none;
 }
 .size1{
     display: none;
+}
+.size2{
+    display:none;
 }
 .checkout{
     display: none;

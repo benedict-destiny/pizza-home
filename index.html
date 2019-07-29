@@ -20,8 +20,9 @@
                         <a href="#section2" class="btn btn-warning animated fadeInUp" onclick="wel()">ORDER NOW</a>
                     </div>
                     <div id="click2">
-                            <a href="#section3" class="btn btn-warning animated fadeInUp" onclick="we()">CHECKOUT</a>
+                            <a href="#section3" class="btn btn-warning animated fadeInUp" onclick="we()">VIEW ORDERS</a>
                         </div>
+
             </div>
         </div>  
           <div class="cont" id="section2">
@@ -34,18 +35,18 @@
                            <div class="card-body">
                             <h4 class="card-title">Hawaaian</h4>
                             <p id="note" class="text-muted">  Click select to chose size and toppings</p>
-                            <button type="button" class="btn btn-warning order" onclick="order1()"> SELECT</button>
-                            <button type="button" class="btn btn-warning cancel" onclick="order1()"> CANCEL</button>
-                            <h5 class="card-title" id="para">CHOOSE SIZE</h3>
+                            <button type="button" class="btn btn-warning order"> SELECT</button>
+                            <button type="button" class="btn btn-warning cancel"> CANCEL</button>
+                            <h5 class="card-title" id="para">CHOOSE SIZE</h5>
                                 <div class="form-group size1">
-                                        <label for="" style="text-align: center;">CHOOSE SIZE</label>
-                                        <select class="custom-select" id="size" name="Size" >
+                                        <select class="custom-select" id="size" name="Size" required>
                                           <option value="1">SELECT SIZE</option>
-                                          <option value="2">LARGE</option>
-                                          <option value="3">MEDIUM</option>
-                                          <option value="4">SMALL</option>
+                                          <option value="1000">LARGE: ksh1000</option>
+                                          <option value="800">MEDIUM: ksh800</option>
+                                          <option value="400">SMALL: ksh400</option>
                                         </select>
-                                        <button type="submit" onclick="selectSize()" class="btn btn-warning">PLACE ORDER</button>
+                                        <input type="number" placeholder="how many pizzas do you want" class="form-control" name="num" id="num" min="1" required>
+                                        <button type="submit" onclick="selectQuantity()" onclick="selectLarge()" class="btn btn-warning">PLACE ORDER</button>
                                       </div>
                            </div>
                        </div>
@@ -53,31 +54,44 @@
                            <img style="height: 303px" class="card-img-top responsive" src="css/images/pizza types/peri. png">
                            <div class="card-body">
                                <h4 class="card-title">PERI PERI</h4>
-                               <p class="text-muted">  Click select to chose size and toppings</p>
-                               <button type="button" class="btn btn-warning" onclick="order2()">SELECT</button>
-                           </div>
+                               <p class="text-muted note2">Click select to chose size and toppings</p>
+                               <button type="button" class="btn btn-warning order2">SELECT</button>
+                               <button type="button" class="btn btn-warning cancel2">CANCEL</button>
+                               <h5 class="card-title" id="para2">CHOOSE SIZE</h3>
+                                <div class="form-group size2">
+                                        <select class="custom-select" id="size" name="Size" >
+                                          <option value="1">SELECT SIZE</option>
+                                          <option value="2">LARGE</option>
+                                          <option value="3">MEDIUM</option>
+                                          <option value="4">SMALL</option>
+                                        </select>
+                                        <button type="submit" onclick="selectMedium()" class="btn btn-warning">PLACE ORDER</button>
+                                      </div>
+                            </div>
                        </div>
                        <div class="col-md-3">
                            <img style="height: 310px" class="card-img-top responsive" src="css/images/pizza types/beast.jpg">
                            <div class="card-body">
                                <h4 class="card-title">BOKO BOKO</h4>
-                               <p class="text-muted">  Click select to chose size and toppings</p>
-                               <button type="button" class="btn btn-warning" onclick="order3()">SELECT</button>
+                               <p class="text-muted note3">  Click select to chose size and toppings</p>
+                               <button type="button" class="btn btn-warning order3">SELECT</button>
+                               <button type="button" class="btn btn-warning cancel3">CANCEL</button>
                            </div>
                        </div>
                        <div class="col-md-3">
                            <img style="height: 310px" class="card-img-top responsive" src="css/images/pizza types/garlic.jpg">
                            <div class="card-body">
                                <h4 class="card-title">GARLIC SPECIAL</h4>
-                               <p class="text-muted">  Click select to chose size and toppings</p>
-                               <button type="button" class="btn btn-warning" onclick="order4()">SELECT</button>
+                               <p class="text-muted note4">  Click select to chose size and toppings</p>
+                               <button type="button" class="btn btn-warning order4" onclick="order4()">SELECT</button>
+                               <button type="button" class="btn btn-warning cancel4" onclick="order4()"> CANCEL</button>
                            </div>
                        </div>
                    </div>
       </div>
       <div class="card-body checkout" id="section3">
           <h3>CHECKOUT HERE</h3>
-          <h1 class="card-title out">TOTAL: KSH1000</h1>
+          <h1 class="card-title out" id="total"></h1>
 
       </div>
         <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>

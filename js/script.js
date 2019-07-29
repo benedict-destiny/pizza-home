@@ -11,61 +11,64 @@ function smal(){
 }
 $(document).ready(function(){
     $(".order").click(function(){
-        $("#note").fadeOut();
-        $("#para").slideToggle();
-        $(".order").hide();
-        $(".cancel").fadeIn();
-        $(".size1").fadeIn();
+        $("#note").fadeOut(0);
+        $("#para").slideToggle(500);
+        $(".order").hide(00);
+        $(".cancel").fadeIn(800);
+        $(".size1").fadeIn(800);
     })
     $(".cancel").click(function(){
-        $("#note").fadeIn();
-        $("#para").slideToggle();
-        $(".order").slideToggle();
-        $(".cancel").fadeOut();
-        $(".size1").fadeOut();
-        $(".checkout").fadeOut();
+        $("#note").fadeIn(500);
+        $("#para").slideToggle(500);
+        $(".order").slideToggle(500);
+        $(".cancel").fadeOut(00);
+        $(".size1").fadeOut(500);
+        $(".checkout").fadeOut(500);
         })
     $(".cancel2").click(function(){
-        $(".note2").fadeIn();
-        $("#para2").slideToggle();
-        $(".order2").slideToggle();
-        $(".cancel2").fadeOut();
-        $(".size2").fadeOut();
+        $(".note2").fadeIn(500);
+        $("#para2").slideToggle(500);
+        $(".order2").slideToggle(500);
+        $(".cancel2").fadeOut(500);
+        $(".size2").fadeOut(500);
     })
     $(".order2").click(function(){
-        $(".note2").fadeOut();
-        $("#para2").fadeIn();
+        $(".note2").fadeOut(500);
+        $("#para2").fadeIn(500);
         $(".order2").hide();
-        $(".cancel2").fadeIn();
-        $(".size2").fadeIn();
+        $(".cancel2").fadeIn(500);
+        $(".size2").fadeIn(500);
     })
     $(".cancel3").click(function(){
-        $(".note3").fadeIn();
-        $("#para3").slideToggle();
-        $(".order3").slideToggle();
-        $(".cancel3").fadeOut();
-        $(".size3").fadeOut();
+        $(".note3").fadeIn(500);
+        $("#para3").slideToggle(500);
+        $(".order3").slideToggle(500);
+        $(".cancel3").fadeOut(500);
+        $(".size3").fadeOut(500);
     })
     $(".order3").click(function(){
-        $(".note3").fadeOut();
-        $("#para3").fadeIn();
+        $(".note3").fadeOut(500);
+        $("#para3").fadeIn(500);
         $(".order3").hide();
-        $(".cancel3").fadeIn();
-        $(".size3").fadeIn();
+        $(".cancel3").fadeIn(500);
+        $(".size3").fadeIn(500);
     })
     $(".cancel4").click(function(){
-        $(".note4").fadeIn();
-        $("#para4").slideToggle();
-        $(".order4").slideToggle();
-        $(".cancel4").fadeOut();
-        $(".size4").fadeOut();
+        $(".note4").fadeIn(500);
+        $("#para4").slideToggle(500);
+        $(".order4").slideToggle(500);
+        $(".cancel4").fadeOut(500);
+        $(".size4").fadeOut(500);
     })
     $(".order4").click(function(){
-        $(".note4").fadeOut();
-        $("#para4").fadeIn();
+        $(".note4").fadeOut(500);
+        $("#para4").fadeIn(500);
         $(".order4").hide();
-        $(".cancel4").fadeIn();
-        $(".size4").fadeIn();
+        $(".cancel4").fadeIn(500);
+        $(".size4").fadeIn(500);
+    })
+    $(".click2").click(function(){
+        $("")
     })
     
 })

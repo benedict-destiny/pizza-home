@@ -92,6 +92,12 @@ div#select.row{
 #para2{
     display: none;
 }
+#para3{
+    display: none;
+}
+#para4{
+    display:none;
+}
 .cancel{
     display: none;
 }
@@ -109,6 +115,12 @@ div#select.row{
 }
 .size2{
     display:none;
+}
+.size3{
+    display:none;
+}
+.size4{
+    display: none;
 }
 .checkout{
     display: none;
@@ -132,4 +144,17 @@ div#select.row{
     font-size: 60px;
     color:black;
     display: none;
+}
+.end h4{
+    font-size:30px;
+    color:black;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+ul{
+    list-style-position: inside;
+    text-align: center;
+}
+h6{
+    text-align: center;
 }

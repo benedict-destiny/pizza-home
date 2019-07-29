@@ -41,9 +41,9 @@
                                 <div class="form-group size1">
                                         <select class="custom-select" id="size" name="Size" required>
                                           <option value="1">SELECT SIZE</option>
-                                          <option value="1000">LARGE: ksh1000</option>
-                                          <option value="800">MEDIUM: ksh800</option>
-                                          <option value="400">SMALL: ksh400</option>
+                                          <option value="2">LARGE: ksh1000</option>
+                                          <option value="3">MEDIUM: ksh800</option>
+                                          <option value="4">SMALL: ksh400</option>
                                         </select>
                                         <input type="number" placeholder="how many pizzas do you want" class="form-control" name="num" id="num" min="1" required>
                                         <button type="submit" onclick="selectQuantity()" onclick="selectLarge()" class="btn btn-warning">PLACE ORDER</button>
@@ -61,11 +61,12 @@
                                 <div class="form-group size2">
                                         <select class="custom-select" id="size" name="Size" >
                                           <option value="1">SELECT SIZE</option>
-                                          <option value="2">LARGE</option>
-                                          <option value="3">MEDIUM</option>
-                                          <option value="4">SMALL</option>
+                                          <option value="2">LARGE: ksh1000</option>
+                                          <option value="3">MEDIUM: ksh800</option>
+                                          <option value="4">SMALL: ksh400</option>
                                         </select>
-                                        <button type="submit" onclick="selectMedium()" class="btn btn-warning">PLACE ORDER</button>
+                                        <input type="number" placeholder="how many pizzas do you want" class="form-control" name="num" id="num" min="1" required>
+                                        <button type="submit" onclick="selectMedium()" onclick="selectLarge()" class="btn btn-warning">PLACE ORDER</button>
                                       </div>
                             </div>
                        </div>
@@ -76,6 +77,17 @@
                                <p class="text-muted note3">  Click select to chose size and toppings</p>
                                <button type="button" class="btn btn-warning order3">SELECT</button>
                                <button type="button" class="btn btn-warning cancel3">CANCEL</button>
+                               <h5 class="card-title" id="para3">CHOOSE SIZE</h3>
+                                <div class="form-group size3">
+                                        <select class="custom-select" id="size" name="Size" >
+                                          <option value="1">SELECT SIZE</option>
+                                          <option value="2">LARGE</option>
+                                          <option value="3">MEDIUM</option>
+                                          <option value="4">SMALL</option>
+                                        </select>
+                                        <input type="number" placeholder="how many pizzas do you want" class="form-control" name="num" id="num" min="1" required>
+                                        <button type="submit" onclick="selectMedium()" class="btn btn-warning">PLACE ORDER</button>
+                                      </div>
                            </div>
                        </div>
                        <div class="col-md-3">
@@ -85,6 +97,17 @@
                                <p class="text-muted note4">  Click select to chose size and toppings</p>
                                <button type="button" class="btn btn-warning order4" onclick="order4()">SELECT</button>
                                <button type="button" class="btn btn-warning cancel4" onclick="order4()"> CANCEL</button>
+                               <h5 class="card-title" id="para4">CHOOSE SIZE</h3>
+                                <div class="form-group size4">
+                                        <select class="custom-select" id="size" name="Size" >
+                                          <option value="1">SELECT SIZE</option>
+                                          <option value="2">LARGE</option>
+                                          <option value="3">MEDIUM</option>
+                                          <option value="4">SMALL</option>
+                                        </select>
+                                        <input type="number" placeholder="how many pizzas do you want" class="form-control" name="num" id="num" min="1" required>
+                                        <button type="submit" onclick="selectMedium()" class="btn btn-warning">Go back to order page</button>
+                                      </div>
                            </div>
                        </div>
                    </div>
@@ -92,7 +115,18 @@
       <div class="card-body checkout" id="section3">
           <h3>CHECKOUT HERE</h3>
           <h1 class="card-title out" id="total"></h1>
+          <button class="btn btn-warning" type="submit" onclick="post()">COMPLETE ORDER</button>
 
+      </div>
+      <div class="card-footer end ">
+          <h4 class="card-title">YOU ARE ALWAYS WELCOME</h4>
+          <ul>
+              <li> CONTACT US: +25493485732</li>
+              <li>EMAIL: bendestiny1289@gmail.com</li>
+          </ul>
+          <h6>&copy;FLAMBE PIZZA 2019
+
+          </h6>
       </div>
         <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>

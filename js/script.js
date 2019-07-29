@@ -39,6 +39,35 @@ $(document).ready(function(){
         $(".cancel2").fadeIn();
         $(".size2").fadeIn();
     })
+    $(".cancel3").click(function(){
+        $(".note3").fadeIn();
+        $("#para3").slideToggle();
+        $(".order3").slideToggle();
+        $(".cancel3").fadeOut();
+        $(".size3").fadeOut();
+    })
+    $(".order3").click(function(){
+        $(".note3").fadeOut();
+        $("#para3").fadeIn();
+        $(".order3").hide();
+        $(".cancel3").fadeIn();
+        $(".size3").fadeIn();
+    })
+    $(".cancel4").click(function(){
+        $(".note4").fadeIn();
+        $("#para4").slideToggle();
+        $(".order4").slideToggle();
+        $(".cancel4").fadeOut();
+        $(".size4").fadeOut();
+    })
+    $(".order4").click(function(){
+        $(".note4").fadeOut();
+        $("#para4").fadeIn();
+        $(".order4").hide();
+        $(".cancel4").fadeIn();
+        $(".size4").fadeIn();
+    })
+    
 })
 
 
@@ -70,9 +99,9 @@ function selectLarge() {
     // }
     
   }
-function select() {
+function selectLarge() {
     var size = document.getElementById("size").value;
-    if (size === "1") {
+    if (size < "1") {
       alert("OOps seems like you haven't selected a size");
       return false;
     }
@@ -115,6 +144,13 @@ function selectQuantity(){
     document.getElementById("total").innerHTML= "total is: " + tot;
     }
 
+    
+}
+function post(){
+    alert("your order has been received thank you for flambeing")
+    return true
+}
+function we(){
     
 }
 l();
